@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    html {
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      min-width: 300px;
+      max-width: 100%;
+      position: relative;
+      vertical-align: middle;
+    }
+
+    h1,
+    h2 {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <h1>Google Focus Mode</h1>
+  <h2>Add Blocked Sites</h2>
+  <label for="Website">Website to block:</label>
+  <input type="text" id="Website" name="Website" placeholder="https://www.website-name.com">
+  <button type="button" id="submit-website">Add</button>
+  <h2>Remove Blocked Sites</h2>
+  <label for="removing-input">Website to remove:</label>
+  <input name="removing-input" id='removing-input' list="website-to-remove" />
+  <button type="button" id="removing-input-button">Remove</button>
+  <datalist id="website-to-remove"></datalist>
+  </select>
+  <h2>Blocked Sites</h2>
+  <ul id="website-list"></ul>
+  <script src="./popup.js" type="module"></script>
+</body>
+
+
+</html>

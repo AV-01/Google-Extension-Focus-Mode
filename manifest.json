@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Stop Procastinating!",
+  "description": "It's time to finally start focusing on the work you need to do. It's hard to force yourself to do work, so instead we'll force you. Download now!",
+  "version": "0.0.1",
+  "icons":{
+    "16":"focus_thumbnail.png",
+    "48":"focus_thumbnail.png",
+    "128":"focus_thumbnail.png"
+  },
+  "content_scripts":[{
+"matches":["https://*/*","http://*/*"],
+"js":["content_script.js"],
+     "run_at": "document_end",
+     "all_frames" : true
+     }],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "focus_thumbnail.png"
+  },
+  "permissions": [
+    "webRequest",
+    "scripting",
+    "tabs",
+    "storage"
+  ]
+}
